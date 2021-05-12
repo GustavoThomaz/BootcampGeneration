@@ -1,6 +1,6 @@
 package ProgramaçãoOrientadaObjetos;
 
-public class Animal {
+public abstract class Animal {
 	private String nome;
 	private int idade;
 	
@@ -9,9 +9,7 @@ public class Animal {
 		this.idade = idade;
 	}
 	
-	void emitirSom(String somAnimal) {
-		System.out.println("O " + nome + " está "+ somAnimal);
-	}
+	abstract void emitirSom();
 	
 	String mostraNome () {
 		return this.nome;
