@@ -28,6 +28,15 @@ public class Usuario {
 	@Size(min=5, max = 100)
 	private String senha;
 
+	public Usuario(String nome, String senha) {
+		this.nome = nome;
+		this.senha = senha;
+	}
+
+	public Usuario() {
+
+	}
+
 	public long getId() {
 		return id;
 	}
